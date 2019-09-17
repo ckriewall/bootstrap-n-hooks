@@ -16,10 +16,44 @@ Clone this repo for a React app with support for:
 
 If you'd rather build this app from scratch, perform the steps below.
 
-Run create-react-app
+#### Run create-react-app
 
 ```bash
 npx create-react-app myproject
+```
+
+##### Clean up Junk
+
+```bash
+rm -i src/App.css src/App.test.js src/index.css src/logo.svg src/serviceworker.js
+```
+
+In `src\App.js` delete...
+
+```javascript
+import logo from './logo.svg';
+import './App.css';
+```
+
+In `src\index.js` delete...
+
+```javascript
+import './index.css';
+```
+
+and
+
+```javascript
+import * as serviceWorker from './serviceWorker';
+```
+
+and
+
+```javascript
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
 ```
 
 #### Install Font Awesome
@@ -58,9 +92,10 @@ yarn install
 
 #### Define React Functional Components with arrow functions
 
+- Define [`src\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/nav/HeaderNav.js) - with Bootstrap navigation
 - Define [`src\Home.js`](https://github.com/ckriewall/react2019/blob/master/src/Home.js)
 - Define [`src\About.js`](https://github.com/ckriewall/react2019/blob/master/src/About.js)
-- Define [`src\data\DataList.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataList.js)
+- Define [`src\data\DataList.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataList.js) - with an `axios` API call
 - Define [`src\data\DataItem.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataItem.js)
 
 #### Configure Routes in `src\App.js`
