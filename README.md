@@ -16,6 +16,17 @@ Clone this repo for a React app with support for:
 
 If you'd rather build this app from scratch, perform the steps below.
 
+- [Run create-react-app](#####Run%20create-react-app)
+- [Remove CRA bloat](#####Remove%20CRA%20bloat)
+- [Install Font Awesome](#####Install%20Font%20Awesome)
+- [Install React and React Bootstrap](####Install%20Bootstrap%20and%20React%20Bootstrap)
+- [Install React Router](####Install%20React%20Router)
+- [Install axios](####Install%20axios)
+- [Update dependencies](####Update%20dependencies)
+- [Define components](####Define%20React%20Functional%20Components)
+- [Configure routes](####%20Configure%20Routes)
+- [Start the application](####%20Start%20the%20application)
+
 #### Run create-react-app
 
 ```bash
@@ -70,7 +81,9 @@ serviceWorker.unregister();
 <title>React App</title>
 ```
 
-#### Install Bootstrap and [React-Bootstrap](https://react-bootstrap.github.io/)
+#### Install Bootstrap and React-Bootstrap
+
+Official pages for [React-Bootstrap](<(https://react-bootstrap.github.io/)>)
 
 ```bash
 yarn add react-bootstrap bootstrap
@@ -83,13 +96,15 @@ In `src/index.js` add a link to the Bootstrap stylesheet (above `ReactDOM.render
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
-#### Install [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
+#### Install React Router
+
+Official pages for [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 
 ```bash
 yarn add react-router-dom
 ```
 
-#### Install [axios](https://github.com/axios/axios)
+#### Install axios
 
 ```bash
 yarn add axios
@@ -103,7 +118,9 @@ Delete `yarn.lock`, then...
 yarn install
 ```
 
-#### Define React Functional Components with arrow functions
+#### Define React Functional Components
+
+Functional components with arrow functions are essential to modern react.
 
 - Define [`src\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/nav/HeaderNav.js) - with Bootstrap navigation
 - Define [`src\Home.js`](https://github.com/ckriewall/react2019/blob/master/src/Home.js)
@@ -111,7 +128,9 @@ yarn install
 - Define [`src\data\DataList.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataList.js) - with an `axios` API call
 - Define [`src\data\DataItem.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataItem.js)
 
-#### Configure Routes in `src\App.js`
+#### Configure Routes
+
+In `src\App.js`
 
 ```jsx
 import React, { Fragment } from 'react';
@@ -141,7 +160,7 @@ function App() {
 export default App;
 ```
 
-#### Run the application
+#### Start the application
 
 ```bash
 yarn start
