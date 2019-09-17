@@ -1,13 +1,13 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
-import ListGroup from 'react-bootstrap/ListGroup';
+import UserItem from './UserItem';
 
 function UserList() {
   // initialize state with useState
-  const [data, setData] = useState({ hits: [] });
-  const [query, setQuery] = useState('redux');
+  const [data, setData] = useState([]);
+  const [query, setQuery] = useState('ckriewall');
   const [url, setUrl] = useState(
-    'https://hn.algolia.com/api/v1/search?query=redux'
+    'https://api.github.com/search/users?q=ckriewall'
   );
   const [isLoading, setIsLoading] = useState(false);
 
@@ -16,13 +16,18 @@ function UserList() {
     const fetchData = async () => {
       setIsLoading(true);
       const result = await axios(url);
-      setData(result.data);
+      setData(result.data.items);
       setIsLoading(false);
     };
     fetchData();
   }, [url]); //  useEffect triggers when url changes. That's only going to happen on button click.
   return (
     <Fragment>
+      <h1>Search an API</h1>
+      <p>
+        Use <code>axios</code> to search users in the{' '}
+        <a href='https://developer.github.com/v3/users/'>Gitub API.</a>
+      </p>
       <input
         type='text'
         value={query}
@@ -30,22 +35,20 @@ function UserList() {
       />
       <button
         type='button'
-        onClick={() =>
-          setUrl(`http://hn.algolia.com/api/v1/search?query=${query}`)
-        }
+        onClick={() => setUrl(`https://api.github.com/search/users?q=${query}`)}
       >
         Search
-      </button>
+      </button>{' '}
+      URL: <code>{url}</code>
       {isLoading ? (
         <div>Loading ...</div>
       ) : (
-        <ListGroup>
-          {data.hits.map(item => (
-            <ListGroup.Item key={item.objectID}>
-              <a href={item.url}>{item.title}</a>
-            </ListGroup.Item>
+        <div>
+          {/* render Github user list */}
+          {data.map(item => (
+            <UserItem user={item} key={item.id} />
           ))}
-        </ListGroup>
+        </div>
       )}
     </Fragment>
   );

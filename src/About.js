@@ -1,18 +1,16 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
 
 const About = () => {
   return (
     <div>
-      <h3>
-        About
-        <small class='text-muted'> What we do here</small>
-      </h3>
-      <p class='lead'>
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-        Duis mollis, est non commodo luctus.
-      </p>
-      <h2>What we do here</h2>
-      <p>This is a paragraph tag.</p>
+      <h1>About</h1>
+      <Card>
+        <Card.Body>
+          <Card.Title>Who we are</Card.Title>
+          <Card.Text>This is a description of us.</Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 };
