@@ -12,6 +12,10 @@ Clone this repo for a React app with support for:
 - [React Bootstrap](https://react-bootstrap.github.io/) - Styling
 - [React Router](https://reacttraining.com/react-router/) - SPA routing
 
+```bash
+git clone https://github.com/ckriewall/react2019.git myproject
+```
+
 ### Manual Installation
 
 If you'd rather build this app from scratch, perform the steps below.
