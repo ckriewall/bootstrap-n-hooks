@@ -37,7 +37,7 @@ If you'd rather build this app from scratch, perform the steps below.
 npx create-react-app myproject
 ```
 
-##### Remove CRA bloat
+#### Remove CRA bloat
 
 ```bash
 rm -i src/App.css src/App.test.js src/index.css src/logo.svg src/serviceworker.js
@@ -87,7 +87,7 @@ serviceWorker.unregister();
 
 #### Install Bootstrap and React-Bootstrap
 
-Official pages for [React-Bootstrap](<(https://react-bootstrap.github.io/)>)
+Official pages for [React-Bootstrap](https://react-bootstrap.github.io/)
 
 ```bash
 yarn add react-bootstrap bootstrap
@@ -95,7 +95,7 @@ yarn add react-bootstrap bootstrap
 
 In `src/index.js` add a link to the Bootstrap stylesheet (above `ReactDOM.render`)
 
-```
+```javascript
 //Import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
