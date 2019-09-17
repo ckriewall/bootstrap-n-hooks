@@ -1,6 +1,6 @@
 # react2019
 
-A project for testing best practices in React. You can clone the repo for a working project, or perform the manual installation to practice scaffolding a modern app.
+Clone the repo for a working project, or perform the manual installation to practice scaffolding a modern app.
 
 ## Getting Started
 
@@ -22,7 +22,7 @@ If you'd rather build this app from scratch, perform the steps below.
 npx create-react-app myproject
 ```
 
-##### Clean up Junk
+##### Remove CRA bloat
 
 ```bash
 rm -i src/App.css src/App.test.js src/index.css src/logo.svg src/serviceworker.js
@@ -70,7 +70,7 @@ serviceWorker.unregister();
 <title>React App</title>
 ```
 
-#### Install Bootstrap and React-Bootstrap
+#### Install Bootstrap and [React-Bootstrap](https://react-bootstrap.github.io/)
 
 ```bash
 yarn add react-bootstrap bootstrap
@@ -79,23 +79,25 @@ yarn add react-bootstrap bootstrap
 In `src/index.js` add a link to the Bootstrap stylesheet (above `ReactDOM.render`)
 
 ```
-// Importing the Bootstrap CSS
+//Import Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
-#### Install React Router
+#### Install [React Router](https://reacttraining.com/react-router/web/guides/quick-start)
 
 ```bash
 yarn add react-router-dom
 ```
 
-#### Install axios
+#### Install [axios](https://github.com/axios/axios)
 
 ```bash
 yarn add axios
 ```
 
 #### Update dependencies
+
+Delete `yarn.lock`, then...
 
 ```bash
 yarn install
