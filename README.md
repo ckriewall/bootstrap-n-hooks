@@ -4,14 +4,15 @@ A project for testing best practices in React.
 
 ## Getting Started
 
-Cloning this repo provides access a React app with support for:
+### Clone the Repo
+
+Clone this repo for a React app with support for:
 
 - [Font Awesome](https://fontawesome.com) - Easy icons
 - [React Bootstrap](https://react-bootstrap.github.io/) - Styling
 - [React Router](https://reacttraining.com/react-router/) - SPA routing
-- [Yarn](https://yarnpkg.com) - Dependency management
 
-### Installing
+### Manual Installation
 
 If you'd rather build this app from scratch, perform the steps below.
 
@@ -24,8 +25,11 @@ npx create-react-app myproject
 Install Font Awesome
 
 - Create a [Font Awesome Kit](https://fontawesome.com/start)
-- Copy the kid code, e.g. `<script src="https://kit.fontawesome.com/<my_kit_id>.js"></script>`
-- Past the kit code into public\index.html
+- Copy the kid code, e.g:
+
+  `<script src="https://kit.fontawesome.com/<my_kit_id>.js"></script>`
+
+- Paste the kit code into `public\index.html`
 
 ```html
 <link rel="apple-touch-icon" href="logo192.png" />
@@ -51,6 +55,10 @@ Run the application
 ```bash
 yarn start
 ```
+
+Create your first component
+
+- Define a `Home` as a React Functional Component with arrow function - [sample](https://gist.github.com/ckriewall/28b2d550e5f5de13475b04183cae849e)
 
 ## Deployment
 
