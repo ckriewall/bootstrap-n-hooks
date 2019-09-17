@@ -20,8 +20,8 @@ const HeaderNav = () => {
           <Nav.Link as={NavLink} to='/about'>
             About
           </Nav.Link>
-          <Nav.Link as={NavLink} to='/users'>
-            Users
+          <Nav.Link as={NavLink} to='/data'>
+            Data
           </Nav.Link>
           {/* TODO: add nav dropdown */}
         </Nav>

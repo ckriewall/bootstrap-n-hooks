@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './nav/HeaderNav';
 import About from './About';
 import Home from './Home';
-import UserList from './users/UserList';
+import DataList from './data/DataList';
 import Container from 'react-bootstrap/Container';
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Container>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
-        <Route path='/users' component={UserList} />
+        <Route path='/data' component={DataList} />
       </Container>
     </BrowserRouter>
   );

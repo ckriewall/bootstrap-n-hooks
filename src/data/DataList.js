@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import axios from 'axios';
-import UserItem from './UserItem';
+import DataItem from './DataItem';
 
-function UserList() {
+function DataList() {
   // initialize state with useState
   const [data, setData] = useState([]);
   const [query, setQuery] = useState('ckriewall');
@@ -46,7 +46,7 @@ function UserList() {
         <div>
           {/* render Github user list */}
           {data.map(item => (
-            <UserItem user={item} key={item.id} />
+            <DataItem user={item} key={item.id} />
           ))}
         </div>
       )}
@@ -54,4 +54,4 @@ function UserList() {
   );
 }
 
-export default UserList;
+export default DataList;
