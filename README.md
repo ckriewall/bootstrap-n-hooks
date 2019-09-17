@@ -63,11 +63,9 @@ serviceWorker.unregister();
 
   `<script src="https://kit.fontawesome.com/<my_kit_id>.js"></script>`
 
-- Paste the kit code into `public\index.html`
+- Paste the kit code into `public\index.html` above the `<title>` tag
 
 ```html
-<link rel="apple-touch-icon" href="logo192.png" />
-<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 <script src="https://kit.fontawesome.com/<my_kit_id>.js"></script>
 <title>React App</title>
 ```
@@ -78,10 +76,23 @@ serviceWorker.unregister();
 yarn add react-bootstrap bootstrap
 ```
 
+In `src/index.js` add a link to the Bootstrap stylesheet (above `ReactDOM.render`)
+
+```
+// Importing the Bootstrap CSS
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
 #### Install React Router
 
 ```bash
 yarn add react-router-dom
+```
+
+#### Install axios
+
+```bash
+yarn add axios
 ```
 
 #### Update dependencies
