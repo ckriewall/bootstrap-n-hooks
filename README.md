@@ -1,48 +1,60 @@
-# Project Title
+# react2019
 
-One Paragraph of project description goes here
+A project for testing best practices in React.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Cloning this repo provides access a React app with support for:
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+- [Font Awesome](https://fontawesome.com) - Easy icons
+- [React Bootstrap](https://react-bootstrap.github.io/) - Styling
+- [React Router](https://reacttraining.com/react-router/) - SPA routing
+- [Yarn](https://yarnpkg.com) - Dependency management
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+If you'd rather build this app from scratch, perform the steps below.
 
-Say what the step will be
+Run create-react-app
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
+```bash
+npx create-react-app myproject
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Install Font Awesome
+
+- Create a [Font Awesome Kit](https://fontawesome.com/start)
+- Copy the kid code, e.g. `<script src="https://kit.fontawesome.com/<my_kit_id>.js"></script>`
+- Past the kit code into public\index.html
+
+```html
+<link rel="apple-touch-icon" href="logo192.png" />
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+<script src="https://kit.fontawesome.com/<my_kit_id>.js"></script>
+<title>React App</title>
+```
+
+Install Bootstrap and React-Bootstrap
+
+```bash
+yarn add react-bootstrap bootstrap
+```
+
+Update dependencies
+
+```bash
+yarn install
+```
+
+Run the application
+
+```bash
+yarn start
+```
 
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
-
-## Built With
-
-- [Create React App](https://github.com/facebook/create-react-app) - React web framework
-- [Font Awesome](https://fontawesome.com)
-- [React Bootstrap](https://react-bootstrap.github.io/) - Styling
-- [React Router](https://reacttraining.com/react-router/) - SPA routing
-- [Yarn](https://yarnpkg.com) - Dependency management
 
 ## Versioning
 
