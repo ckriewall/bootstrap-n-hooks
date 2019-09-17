@@ -16,16 +16,16 @@ Clone this repo for a React app with support for:
 
 If you'd rather build this app from scratch, perform the steps below.
 
-- [Run create-react-app](#####Run%20create-react-app)
-- [Remove CRA bloat](#####Remove%20CRA%20bloat)
-- [Install Font Awesome](#####Install%20Font%20Awesome)
-- [Install React and React Bootstrap](####Install%20Bootstrap%20and%20React%20Bootstrap)
-- [Install React Router](####Install%20React%20Router)
-- [Install axios](####Install%20axios)
-- [Update dependencies](####Update%20dependencies)
-- [Define components](####Define%20React%20Functional%20Components)
-- [Configure routes](####%20Configure%20Routes)
-- [Start the application](####%20Start%20the%20application)
+- [Run create-react-app](#run-create-react-app)
+- [Remove CRA bloat](#remove-cra-bloat)
+- [Install Font Awesome](#install-font-awesome)
+- [Install Bootstrap and React Bootstrap](#install-bootstrap-and-react-bootstrap)
+- [Install React Router](#install-react-router)
+- [Install axios](#install-axios)
+- [Update dependencies](#update-dependencies)
+- [Define components](#define-components)
+- [Configure routes](#configure-routes)
+- [Start the application](#start-the-application)
 
 #### Run create-react-app
 
@@ -118,7 +118,7 @@ Delete `yarn.lock`, then...
 yarn install
 ```
 
-#### Define React Functional Components
+#### Define Components
 
 Functional components with arrow functions are essential to modern react.
 
