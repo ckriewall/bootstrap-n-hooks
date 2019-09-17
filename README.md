@@ -63,14 +63,15 @@ yarn install
 - Define [`src\data\DataList.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataList.js)
 - Define [`src\data\DataItem.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataItem.js)
 
-#### Configure Routes
+#### Configure Routes in `src\App.js`
 
 ```jsx
 import React, { Fragment } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import Navbar from './nav/HeaderNav';
 import About from './About';
 import Home from './Home';
-import UserList from './users/UserList';
+import DataList from './data/DataList';
 import Container from 'react-bootstrap/Container';
 
 function App() {
@@ -83,7 +84,7 @@ function App() {
       <Container>
         <Route exact path='/' component={Home} />
         <Route path='/about' component={About} />
-        <Route path='/users' component={UserList} />
+        <Route path='/data' component={DataList} />
       </Container>
     </BrowserRouter>
   );
@@ -117,7 +118,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Acknowledgments
 
 - [React Front to Back](https://www.udemy.com/modern-react-front-to-back/) by [Traversy Media](https://www.traversymedia.com/)
-
-```
-
-```
