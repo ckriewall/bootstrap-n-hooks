@@ -110,6 +110,8 @@ yarn add react-router-dom
 
 #### Install axios
 
+Official pages for [axios](https://github.com/axios/axios)
+
 ```bash
 yarn add axios
 ```

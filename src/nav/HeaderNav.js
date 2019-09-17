@@ -10,13 +10,13 @@ import { Link, NavLink, withRouter } from 'react-router-dom';
 
 const HeaderNav = () => {
   return (
-    <Navbar bg='light' expand='lg'>
+    <Navbar bg='dark' variant='dark' expand='lg' className='mb-4' sticky='top'>
       <Navbar.Brand as={Link} to='/'>
         <i className='fab fa-react'></i> React-Bootstrap
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
-        <Nav className='mr-auto'>
+        <Nav className='mr-auto' bg='light'>
           <Nav.Link as={NavLink} to='/about'>
             About
           </Nav.Link>
@@ -27,7 +27,7 @@ const HeaderNav = () => {
         </Nav>
         <Form inline>
           <FormControl type='text' placeholder='Search' className='mr-sm-2' />
-          <Button variant='outline-success'>Search</Button>
+          <Button variant='outline-primary'>Search</Button>
         </Form>
       </Navbar.Collapse>
     </Navbar>

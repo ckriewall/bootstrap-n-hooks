@@ -8,22 +8,17 @@ const Home = () => {
   const toggleShowToast = () => setShowToast(!showToast);
   return (
     <div>
-      <h1>Home</h1>
-
-      <h3>React-Bootstrap</h3>
-      <p>This simple template features: </p>
+      <h1>Welcome</h1>
+      <p>This simple React template features: </p>
       <ListGroup>
         <ListGroup.Item>
-          <i className='fab fa-react'></i> React
+          <i className='fab fa-font-awesome-alt'></i> Font Awesome
         </ListGroup.Item>
         <ListGroup.Item>
           <i className='fab fa-bootstrap'></i> React Bootstrap
         </ListGroup.Item>
         <ListGroup.Item>
           <i className='fal fa-link'></i> React Router
-        </ListGroup.Item>
-        <ListGroup.Item>
-          <i className='fab fa-font-awesome-alt'></i> Font Awesome
         </ListGroup.Item>
         <ListGroup.Item>
           <i className='fal fa-database'></i> API calls with <code>axios</code>

@@ -6,9 +6,13 @@ const About = () => {
     <div>
       <h1>About</h1>
       <Card>
+        <Card.Header as='h5'>Featured</Card.Header>
         <Card.Body>
-          <Card.Title>Who we are</Card.Title>
-          <Card.Text>This is a description of us.</Card.Text>
+          <Card.Title>Special title treatment</Card.Title>
+          <Card.Text>
+            With supporting text below as a natural lead-in to additional
+            content.
+          </Card.Text>
         </Card.Body>
       </Card>
     </div>
