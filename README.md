@@ -16,7 +16,11 @@ Clone this repo for a React app with support for:
 - [React Router](https://reacttraining.com/react-router/) - SPA routing
 
 ```bash
-git clone https://github.com/ckriewall/react2019.git myproject
+git clone https://github.com/ckriewall/react2019.git myproject;
+cd myproject;
+yarn install;
+
+yarn start;
 ```
 
 ### Manual Installation
