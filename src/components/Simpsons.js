@@ -33,13 +33,12 @@ const Simpsons = () => {
       <Container>
         <Row>
           {data.map(item => (
-            <Col xs='12' sm='6' md='4' key={item.image + item.quote}>
+            <Col xs='12' sm='6' md='4' key={item.quote}>
               <Card>
                 <Card.Header as='h5'>{item.character}</Card.Header>
                 <Card.Img variant='top' src={item.image} />
                 <Card.Body>
                   <Card.Title>{item.quote}</Card.Title>
-                  <Card.Text>Card Text</Card.Text>
                 </Card.Body>
                 <Card.Footer className='text-muted'>
                   Simpsons Quotes API

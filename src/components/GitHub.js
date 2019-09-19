@@ -7,7 +7,7 @@ import Table from 'react-bootstrap/Table';
 import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
 
-const DataList = () => {
+const GitHub = () => {
   // initialize state with useState
   const [data, setData] = useState([]);
   const [query, setQuery] = useState('ckriewall');
@@ -109,4 +109,4 @@ const DataList = () => {
   );
 };
 
-export default DataList;
+export default GitHub;

@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Navbar from './components/nav/HeaderNav';
 import Home from './components/Home';
 import Simpsons from './components/Simpsons';
-import DataList from './components/data/DataList';
+import GitHub from './components/GitHub';
 import Container from 'react-bootstrap/Container';
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
 
       <Container>
         <Route exact path='/' component={Home} />
-        <Route path='/data' component={DataList} />
+        <Route path='/github' component={GitHub} />
         <Route path='/simpsons' component={Simpsons} />
       </Container>
     </BrowserRouter>

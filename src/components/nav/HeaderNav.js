@@ -16,18 +16,18 @@ const HeaderNav = () => {
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>
         <Nav className='mr-auto' bg='light'>
-          <Nav.Link as={NavLink} to='/data'>
+          <Nav.Link as={NavLink} to='/github'>
             Search Github
           </Nav.Link>
           <Nav.Link as={NavLink} to='/simpsons'>
             Simpsons Quotes
           </Nav.Link>
           <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
-            <NavDropdown.Item as={NavLink} to='/data'>
+            <NavDropdown.Item as={NavLink} to='/github'>
               Search Github
             </NavDropdown.Item>
             <NavDropdown.Item as={NavLink} to='/simpsons'>
-              Simpsons
+              Simpsons Quotes
             </NavDropdown.Item>
           </NavDropdown>
         </Nav>

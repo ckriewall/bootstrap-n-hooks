@@ -1,9 +1,9 @@
 # react2019
 
-Clone the repo for a working project, or perform the manual installation to practice scaffolding a modern app. Emphasis is placed on using:
+Clone the repo or perform the manual installation to practice scaffolding a modern app. Emphasis is placed on:
 
-- React Functional Components with Arrow Functions (not component classes)
-- React Hooks (not component lifecycle events)
+- React [Arrow Function Components](https://www.robinwieruch.de/react-function-component#react-arrow-function-component), not classes or SFCs.
+- React [Hooks](https://reactjs.org/docs/hooks-intro.html) for component state rather than classes
 
 ## Getting Started
 
@@ -71,9 +71,7 @@ serviceWorker.unregister();
 
 - Create a [Font Awesome Kit](https://fontawesome.com/start)
 - Copy the kit code, e.g:
-
   `<script src="https://kit.fontawesome.com/<my_kit_id>.js"></script>`
-
 - Paste the kit code into `public\index.html` above the `<title>` tag
 
 ```html
@@ -124,11 +122,9 @@ yarn install
 
 Functional components with arrow functions are essential to modern react.
 
-- Define [`src\components\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/components/nav/HeaderNav.js) - with Bootstrap navigation
+- Define [`src\components\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/components/nav/HeaderNav.js) - for Bootstrap navigation
+- Define [`src\components\GitHub.js`](https://github.com/ckriewall/react2019/blob/master/src/components/GitHub.js) - for an `axios` API call
 - Define [`src\components\Home.js`](https://github.com/ckriewall/react2019/blob/master/src/components/Home.js)
-- Define [`src\components\About.js`](https://github.com/ckriewall/react2019/blob/master/src/components/About.js)
-- Define [`src\components\data\DataList.js`](https://github.com/ckriewall/react2019/blob/master/src/components/data/DataList.js) - with an `axios` API call
-- Define [`src\components\data\DataItem.js`](https://github.com/ckriewall/react2019/blob/master/src/components/data/DataItem.js)
 
 #### Configure Routes
 
@@ -137,13 +133,13 @@ In `src\App.js`
 ```jsx
 import React, { Fragment } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Navbar from './nav/HeaderNav';
-import About from './About';
-import Home from './Home';
-import DataList from './data/DataList';
+import Navbar from './components/nav/HeaderNav';
+import Home from './components/Home';
+import Simpsons from './components/Simpsons';
+import GitHub from './components/GitHub';
 import Container from 'react-bootstrap/Container';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Fragment>
@@ -152,12 +148,12 @@ function App() {
 
       <Container>
         <Route exact path='/' component={Home} />
-        <Route path='/about' component={About} />
-        <Route path='/data' component={DataList} />
+        <Route path='/github' component={GitHub} />
+        <Route path='/simpsons' component={Simpsons} />
       </Container>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
 ```
