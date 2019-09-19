@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Navbar from './nav/HeaderNav';
+import Navbar from './components/nav/HeaderNav';
 import Home from './components/Home';
 import Simpsons from './components/Simpsons';
 import DataList from './components/data/DataList';

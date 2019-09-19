@@ -46,13 +46,6 @@ npx create-react-app myproject
 rm -i src/App.css src/App.test.js src/index.css src/logo.svg src/serviceworker.js
 ```
 
-In `src\App.js` delete...
-
-```javascript
-import logo from './logo.svg';
-import './App.css';
-```
-
 In `src\index.js` delete...
 
 ```javascript

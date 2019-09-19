@@ -27,8 +27,8 @@ const DataList = () => {
     fetchData();
   }, [url]); //  useEffect triggers when url changes. That's only going to happen on button click.
 
-  const onClick = () => {
-    window.open('http://www.google.com');
+  const onClick = html_url => {
+    window.open(html_url);
   };
 
   return (
@@ -92,7 +92,11 @@ const DataList = () => {
                   <Badge variant='info'> {item.score}</Badge>
                 </td>
                 <td>
-                  <Button variant='primary' size='sm' onClick={onClick}>
+                  <Button
+                    variant='primary'
+                    size='sm'
+                    onClick={() => onClick(item.html_url)}
+                  >
                     Go
                   </Button>
                 </td>
