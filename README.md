@@ -174,17 +174,13 @@ export default App;
 yarn start
 ```
 
-## Deployment
+## Deploy
 
-Add additional notes about how to deploy this on a live system
+Production site on Netlify syncs with Github via [Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/).
 
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning.
-
-## Authors
-
-- _Initial work_ - [C Kriewall](https://github.com/ckriewall)
 
 ## License
 
