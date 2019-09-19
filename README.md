@@ -5,6 +5,12 @@ Clone the repo, or perform a manual installation to scaffold a modern app. Empha
 - React [Arrow Function Components](https://www.robinwieruch.de/react-function-component#react-arrow-function-component)
 - React [Hooks](https://reactjs.org/docs/hooks-intro.html)
 
+## Demo
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/343c414c-0ae3-4fa1-96d6-c60d0ffe8c05/deploy-status)](https://app.netlify.com/sites/react2019/deploys)
+
+View the [demo on Netlify](https://react2019.netlify.com/).
+
 ## Getting Started
 
 ### Clone the Repo
