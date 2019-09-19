@@ -1,6 +1,9 @@
 # react2019
 
-Clone the repo for a working project, or perform the manual installation to practice scaffolding a modern app.
+Clone the repo for a working project, or perform the manual installation to practice scaffolding a modern app. Emphasis is placed on using:
+
+- React Functional Components with Arrow Functions (not component classes)
+- React Hooks (not component lifecycle events)
 
 ## Getting Started
 
@@ -128,11 +131,11 @@ yarn install
 
 Functional components with arrow functions are essential to modern react.
 
-- Define [`src\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/nav/HeaderNav.js) - with Bootstrap navigation
-- Define [`src\Home.js`](https://github.com/ckriewall/react2019/blob/master/src/Home.js)
-- Define [`src\About.js`](https://github.com/ckriewall/react2019/blob/master/src/About.js)
-- Define [`src\data\DataList.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataList.js) - with an `axios` API call
-- Define [`src\data\DataItem.js`](https://github.com/ckriewall/react2019/blob/master/src/data/DataItem.js)
+- Define [`src\components\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/components/nav/HeaderNav.js) - with Bootstrap navigation
+- Define [`src\components\Home.js`](https://github.com/ckriewall/react2019/blob/master/src/components/Home.js)
+- Define [`src\components\About.js`](https://github.com/ckriewall/react2019/blob/master/src/components/About.js)
+- Define [`src\components\data\DataList.js`](https://github.com/ckriewall/react2019/blob/master/src/components/data/DataList.js) - with an `axios` API call
+- Define [`src\components\data\DataItem.js`](https://github.com/ckriewall/react2019/blob/master/src/components/data/DataItem.js)
 
 #### Configure Routes
 

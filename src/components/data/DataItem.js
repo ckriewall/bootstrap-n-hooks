@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import Badge from 'react-bootstrap/Badge';
 import Image from 'react-bootstrap/Image';
 
-function DataItem({ user: { login, avatar_url, html_url, type, score } }) {
+const DataItem = ({ user: { login, avatar_url, html_url, type, score } }) => {
   return (
     <div className='card border-dark mb-3'>
       <div className='card-header'>{type}</div>
@@ -21,7 +21,7 @@ function DataItem({ user: { login, avatar_url, html_url, type, score } }) {
       </div>
     </div>
   );
-}
+};
 
 DataItem.propTypes = {
   user: PropTypes.object.isRequired

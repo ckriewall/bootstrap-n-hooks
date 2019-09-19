@@ -9,8 +9,17 @@ const Home = () => {
   return (
     <div>
       <h1>Welcome</h1>
-      <p>This simple React template features: </p>
+      <p>
+        For a complete project description please see{' '}
+        <a href='https://github.com/ckriewall/react2019' alt='Github repo'>
+          the README
+        </a>
+        . This simple React template features:
+      </p>
       <ListGroup>
+        <ListGroup.Item>
+          <i className='fal fa-database'></i> API calls with <code>axios</code>
+        </ListGroup.Item>
         <ListGroup.Item>
           <i className='fab fa-font-awesome-alt'></i> Font Awesome
         </ListGroup.Item>
@@ -19,9 +28,6 @@ const Home = () => {
         </ListGroup.Item>
         <ListGroup.Item>
           <i className='fal fa-link'></i> React Router
-        </ListGroup.Item>
-        <ListGroup.Item>
-          <i className='fal fa-database'></i> API calls with <code>axios</code>
         </ListGroup.Item>
       </ListGroup>
       <br />

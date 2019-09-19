@@ -7,7 +7,7 @@ import Table from 'react-bootstrap/Table';
 import FormControl from 'react-bootstrap/FormControl';
 import InputGroup from 'react-bootstrap/InputGroup';
 
-function DataList() {
+const DataList = () => {
   // initialize state with useState
   const [data, setData] = useState([]);
   const [query, setQuery] = useState('ckriewall');
@@ -103,6 +103,6 @@ function DataList() {
       )}
     </Fragment>
   );
-}
+};
 
 export default DataList;
