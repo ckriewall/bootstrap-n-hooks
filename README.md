@@ -1,9 +1,9 @@
 # react2019
 
-Clone the repo or perform the manual installation to practice scaffolding a modern app. Emphasis is placed on:
+Clone the repo, or perform a manual installation to scaffold a modern app. Emphasis is placed on:
 
-- React [Arrow Function Components](https://www.robinwieruch.de/react-function-component#react-arrow-function-component), not classes or SFCs.
-- React [Hooks](https://reactjs.org/docs/hooks-intro.html) for component state rather than classes
+- React [Arrow Function Components](https://www.robinwieruch.de/react-function-component#react-arrow-function-component)
+- React [Hooks](https://reactjs.org/docs/hooks-intro.html)
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ git clone https://github.com/ckriewall/react2019.git myproject
 
 ### Manual Installation
 
-If you'd rather build this app from scratch, perform the steps below.
+A manual build includes following tasks:
 
 - [Run create-react-app](#run-create-react-app)
 - [Remove CRA bloat](#remove-cra-bloat)
