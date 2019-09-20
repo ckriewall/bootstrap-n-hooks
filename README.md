@@ -128,7 +128,7 @@ Arrow Function Components can replace Class Components and SFCs. Build 3 Arrow F
 
 - Define [`src\components\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/components/nav/HeaderNav.js) - for Bootstrap navigation
 - Define [`src\components\GitHub.js`](https://github.com/ckriewall/react2019/blob/master/src/components/GitHub.js) - for an `axios` API call
-- Define [`src\components\Home.js`](https://github.com/ckriewall/react2019/blob/master/src/components/Home.js)
+- Define [`src\components\Home.js`](https://github.com/ckriewall/react2019/blob/master/src/components/Home.js) - for a demo of Bootstrap JS
 
 #### Configure Routes
 
