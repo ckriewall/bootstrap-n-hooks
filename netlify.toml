@@ -1,2 +1,4 @@
+# point Netlify to the SPA build directory
+
 [build]
     publish="build"

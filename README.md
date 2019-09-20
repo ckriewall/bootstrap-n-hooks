@@ -34,7 +34,7 @@ yarn install
 
 ### Option 2: Manual Installation
 
-Manual installation includes following tasks:
+Manual installation includes the following tasks:
 
 - [Run create-react-app](#run-create-react-app)
 - [Remove CRA bloat](#remove-cra-bloat)
@@ -42,7 +42,7 @@ Manual installation includes following tasks:
 - [Install Bootstrap and React Bootstrap](#install-bootstrap-and-react-bootstrap)
 - [Install React Router](#install-react-router)
 - [Install axios](#install-axios)
-- [Define components](#define-components)
+- [Define Components](#define-components)
 - [Configure routes](#configure-routes)
 - [Start the application](#start-the-application)
 
@@ -172,10 +172,18 @@ yarn start
 
 - Install the [Netlify CLI](https://www.netlify.com/docs/cli/)
 - Configure [Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/)
+  - In `\project_root\netlify.toml` add:
+
+```toml
+# point Netlify to the SPA build directory
+
+[build]
+    publish="build"
+```
 
 ### Add React-Router support
 
-Netlify requires a [redirect rule](https://www.netlify.com/docs/redirects/) to support [React Router](https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/). For a React SPA, create `/public/redirects` (no file extension).
+Netlify requires a [redirect rule](https://www.netlify.com/docs/redirects/) to [support React Router](https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/). For a React SPA, create `/public/redirects` (no file extension).
 
 > To enable clean URLs in your Netlify deployed SPAs, add the following rule to your redirects file.
 
@@ -184,10 +192,6 @@ Netlify requires a [redirect rule](https://www.netlify.com/docs/redirects/) to s
 ## Versioning
 
 We use [SemVer](http://semver.org/) for versioning.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
