@@ -1,6 +1,6 @@
 # react2019
 
-Clone the repo, or perform a manual installation to scaffold a modern app. Emphasis is placed on:
+A simple app incorporating to-date best practices React SPA. Emphasis is placed on:
 
 - React [Arrow Function Components](https://www.robinwieruch.de/react-function-component#react-arrow-function-component)
 - React [Hooks](https://reactjs.org/docs/hooks-intro.html)
@@ -13,13 +13,18 @@ View the [demo on Netlify](https://react2019.netlify.com/).
 
 ## Getting Started
 
-### Clone the Repo
+To use this project either:
 
-Clone this repo for a React app with support for:
+1. Clone the repo OR
+2. Perform a manual installation
+
+Both approaches result in the same product, namely a React app with support for:
 
 - [Font Awesome](https://fontawesome.com) - Easy icons
 - [React Bootstrap](https://react-bootstrap.github.io/) - Styling
 - [React Router](https://reacttraining.com/react-router/) - SPA routing
+
+### Option 1: Clone the Repo
 
 ```bash
 git clone https://github.com/ckriewall/react2019.git myproject;
@@ -29,9 +34,9 @@ yarn install;
 yarn start;
 ```
 
-### Manual Installation
+### Option 2: Manual Installation
 
-A manual build includes following tasks:
+Manual installation includes following tasks:
 
 - [Run create-react-app](#run-create-react-app)
 - [Remove CRA bloat](#remove-cra-bloat)
@@ -39,7 +44,6 @@ A manual build includes following tasks:
 - [Install Bootstrap and React Bootstrap](#install-bootstrap-and-react-bootstrap)
 - [Install React Router](#install-react-router)
 - [Install axios](#install-axios)
-- [Update dependencies](#update-dependencies)
 - [Define components](#define-components)
 - [Configure routes](#configure-routes)
 - [Start the application](#start-the-application)
@@ -120,17 +124,9 @@ Official pages for [axios](https://github.com/axios/axios)
 yarn add axios
 ```
 
-#### Update dependencies
-
-Delete `yarn.lock`, then...
-
-```bash
-yarn install
-```
-
 #### Define Components
 
-Functional components with arrow functions are essential to modern react.
+Arrow Function Components can replace Class Components and SFCs. Build 3 Arrow Function Components to bring the app to life.
 
 - Define [`src\components\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/components/nav/HeaderNav.js) - for Bootstrap navigation
 - Define [`src\components\GitHub.js`](https://github.com/ckriewall/react2019/blob/master/src/components/GitHub.js) - for an `axios` API call
@@ -174,9 +170,20 @@ export default App;
 yarn start
 ```
 
-## Deploy
+## Deploy to Netlify
 
-Production site on Netlify syncs with Github via [Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/).
+Production site on Netlify syncs with Github via .
+
+- Install the [Netlify CLI](https://www.netlify.com/docs/cli/)
+- Configure [Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/)
+
+### Add React-Router support
+
+Netlify requires a [redirect rule](https://www.netlify.com/docs/redirects/) to support [React Router](https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/). For a React SPA, create `/public/redirects` (no file extension).
+
+> To enable clean URLs in your Netlify deployed SPAs, add the following rule to your redirects file.
+
+      /*    /index.html   200
 
 ## Versioning
 
