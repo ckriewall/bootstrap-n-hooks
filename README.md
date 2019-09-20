@@ -1,6 +1,6 @@
 # react2019
 
-A simple app incorporating to-date best practices React SPA. Emphasis is placed on:
+A simple app incorporating best practices for a React SPA. Emphasis is placed on:
 
 - React [Arrow Function Components](https://www.robinwieruch.de/react-function-component#react-arrow-function-component)
 - React [Hooks](https://reactjs.org/docs/hooks-intro.html)
@@ -13,9 +13,9 @@ View the [demo on Netlify](https://react2019.netlify.com/).
 
 ## Getting Started
 
-To use this project either:
+To use this project:
 
-1. Clone the repo OR
+1. Clone the repo **OR**
 2. Perform a manual installation
 
 Both approaches result in the same product, namely a React app with support for:
@@ -27,11 +27,9 @@ Both approaches result in the same product, namely a React app with support for:
 ### Option 1: Clone the Repo
 
 ```bash
-git clone https://github.com/ckriewall/react2019.git myproject;
-cd myproject;
-yarn install;
-
-yarn start;
+git clone https://github.com/ckriewall/react2019.git myproject
+cd myproject
+yarn install
 ```
 
 ### Option 2: Manual Installation
@@ -164,15 +162,13 @@ const App = () => {
 export default App;
 ```
 
-#### Start the application
+### Start the Application
 
 ```bash
 yarn start
 ```
 
 ## Deploy to Netlify
-
-Production site on Netlify syncs with Github via .
 
 - Install the [Netlify CLI](https://www.netlify.com/docs/cli/)
 - Configure [Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/)
@@ -183,7 +179,7 @@ Netlify requires a [redirect rule](https://www.netlify.com/docs/redirects/) to s
 
 > To enable clean URLs in your Netlify deployed SPAs, add the following rule to your redirects file.
 
-      /*    /index.html   200
+`/* /index.html 200`
 
 ## Versioning
 
