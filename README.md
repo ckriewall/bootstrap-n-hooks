@@ -174,16 +174,9 @@ yarn start
 - Configure [Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/)
   - In `\project_root\netlify.toml` add:
 
-```toml
-# point Netlify to the SPA build directory
-
-[build]
-    publish="build"
-```
-
 ### Add React-Router support
 
-Netlify requires a [redirect rule](https://www.netlify.com/docs/redirects/) to [support React Router](https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/). For a React SPA, create `/public/redirects` (no file extension).
+Netlify requires a [redirect rule](https://www.netlify.com/docs/redirects/) to [support React Router](https://www.netlify.com/blog/2019/01/16/redirect-rules-for-all-how-to-configure-redirects-for-your-static-site/). For a React SPA, create `/public/_redirects` (no file extension).
 
 > To enable clean URLs in your Netlify deployed SPAs, add the following rule to your redirects file.
 
