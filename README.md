@@ -172,7 +172,6 @@ yarn start
 
 - Install the [Netlify CLI](https://www.netlify.com/docs/cli/)
 - Configure [Continuous Deployment](https://www.netlify.com/docs/continuous-deployment/)
-  - In `\project_root\netlify.toml` add:
 
 ### Add React-Router support
 
