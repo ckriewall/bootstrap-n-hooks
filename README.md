@@ -1,4 +1,4 @@
-# react2019
+# bootstrap-n-hooks
 
 A simple app incorporating best practices for a React SPA. Emphasis is placed on:
 
@@ -7,9 +7,9 @@ A simple app incorporating best practices for a React SPA. Emphasis is placed on
 
 ## Demo
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/343c414c-0ae3-4fa1-96d6-c60d0ffe8c05/deploy-status)](https://app.netlify.com/sites/react2019/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/343c414c-0ae3-4fa1-96d6-c60d0ffe8c05/deploy-status)](https://app.netlify.com/sites/bootstrap-n-hooks/deploys)
 
-View the [demo on Netlify](https://react2019.netlify.com/).
+View the [demo on Netlify](https://bootstrap-n-hooks.netlify.com/).
 
 ## Getting Started
 
@@ -27,7 +27,7 @@ Both approaches result in the same product, namely a React app with support for:
 ### Option 1: Clone the Repo
 
 ```bash
-git clone https://github.com/ckriewall/react2019.git myproject
+git clone https://github.com/ckriewall/bootstrap-n-hooks.git myproject
 cd myproject
 yarn install
 ```
@@ -126,9 +126,9 @@ yarn add axios
 
 Arrow Function Components can replace Class Components and SFCs. Build 3 Arrow Function Components to bring the app to life.
 
-- Define [`src\components\nav\HeaderNav.js`](https://github.com/ckriewall/react2019/blob/master/src/components/nav/HeaderNav.js) - for Bootstrap navigation
-- Define [`src\components\GitHub.js`](https://github.com/ckriewall/react2019/blob/master/src/components/GitHub.js) - for an `axios` API call
-- Define [`src\components\Home.js`](https://github.com/ckriewall/react2019/blob/master/src/components/Home.js) - for a demo of Bootstrap JS
+- Define [`src\components\nav\HeaderNav.js`](https://github.com/ckriewall/bootstrap-n-hooks/blob/master/src/components/nav/HeaderNav.js) - for Bootstrap navigation
+- Define [`src\components\GitHub.js`](https://github.com/ckriewall/bootstrap-n-hooks/blob/master/src/components/GitHub.js) - for an `axios` API call
+- Define [`src\components\Home.js`](https://github.com/ckriewall/bootstrap-n-hooks/blob/master/src/components/Home.js) - for a demo of Bootstrap JS
 
 #### Configure Routes
 

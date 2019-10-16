@@ -7,7 +7,7 @@ const HeaderNav = () => {
   return (
     <Navbar bg='dark' variant='dark' expand='lg' className='mb-4' sticky='top'>
       <Navbar.Brand as={NavLink} to='/'>
-        <i className='fab fa-react'></i> React Bootstrap
+        <i className='fab fa-react'></i> Bootstrap n' Hooks
       </Navbar.Brand>
       <Navbar.Toggle aria-controls='basic-navbar-nav' />
       <Navbar.Collapse id='basic-navbar-nav'>

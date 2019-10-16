@@ -37,8 +37,10 @@ const GitHub = () => {
         <i className='fab fa-github'></i> Search GitHub
       </h1>
       <p>
-        Use <code>axios</code> to search users in the{' '}
-        <a href='https://developer.github.com/v3/users/'>Gitub API.</a>
+        Search the{' '}
+        <a href='https://developer.github.com/v3/users/'>Gitub API</a> with{' '}
+        <code>axios</code> from the <code>useEffect</code> hook in this
+        functional component.
       </p>
 
       <InputGroup className='mb-3'>

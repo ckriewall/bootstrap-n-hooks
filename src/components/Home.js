@@ -11,14 +11,18 @@ const Home = () => {
       <h1>Welcome</h1>
       <p>
         For a complete project description please see{' '}
-        <a href='https://github.com/ckriewall/react2019' alt='Github repo'>
+        <a
+          href='https://github.com/ckriewall/bootstrap-n-hooks'
+          alt='Github repo'
+        >
           the README
         </a>
         . This simple React template features:
       </p>
       <ListGroup>
         <ListGroup.Item>
-          <i className='fal fa-database'></i> API calls with <code>axios</code>
+          <i className='fal fa-database'></i> <code>axios</code> API calls from
+          the <code>useEffect</code> hook
         </ListGroup.Item>
         <ListGroup.Item>
           <i className='fab fa-font-awesome-alt'></i> Font Awesome
@@ -32,7 +36,7 @@ const Home = () => {
       </ListGroup>
       <br />
       <h4>React-Bootstrap JS</h4>
-      <p>React-Bootstrap has JS animation features, like dismissing a Toast.</p>
+      <p>React-Bootstrap has cool JS animation features like Toasts.</p>
       <Toast show={showToast} onClose={toggleShowToast}>
         <Toast.Header>
           <i className='fal fa-bread-slice'></i>{' '}
