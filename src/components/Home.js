@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import ListGroup from 'react-bootstrap/ListGroup';
-import Toast from 'react-bootstrap/Toast';
+import React, { useState } from 'react'
+import Button from 'react-bootstrap/Button'
+import ListGroup from 'react-bootstrap/ListGroup'
+import Toast from 'react-bootstrap/Toast'
 
 const Home = () => {
-  const [showToast, setShowToast] = useState(true);
-  const toggleShowToast = () => setShowToast(!showToast);
+  const [showToast, setShowToast] = useState(true)
+  const toggleShowToast = () => setShowToast(!showToast)
   return (
     <div>
       <h1>Welcome</h1>
@@ -13,8 +13,7 @@ const Home = () => {
         For a complete project description please see{' '}
         <a
           href='https://github.com/ckriewall/bootstrap-n-hooks'
-          alt='Github repo'
-        >
+          alt='Github repo'>
           the README
         </a>
         . This simple React template features:
@@ -50,7 +49,7 @@ const Home = () => {
         Toggle Toast <strong>with</strong> Animation
       </Button>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
